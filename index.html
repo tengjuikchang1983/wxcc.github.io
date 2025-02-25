@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webex CC Chat Widget</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        h1 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Website</h1>
+    <p>This is a sample website with a Webex CC chat widget.</p>
+
+    <!-- Webex CC Chat Widget Code -->
+    <script src="https://assets.cisco.com/cdc/ccw/ccw.min.js"></script>
+    <script>
+        CCW({
+            orgId: 'YOUR_ORG_ID', // Replace with your Webex Org ID
+            widgetId: 'YOUR_WIDGET_ID', // Replace with your Webex Widget ID
+            popup: true,
+            position: 'right',
+            height: '500px',
+            width: '350px'
+        });
+    </script>
+</body>
+</html>
